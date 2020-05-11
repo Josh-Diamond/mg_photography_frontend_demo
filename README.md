@@ -1,0 +1,1 @@
+# mg_photography_frontend_demo
