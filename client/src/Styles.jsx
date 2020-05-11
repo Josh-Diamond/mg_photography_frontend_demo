@@ -1,0 +1,23 @@
+export const styles = {
+    "main_background_color": "radial-gradient(circle, rgba(162,255,145,1) 20%, rgba(123,175,62,1) 34%, rgba(210,138,81,1) 74%, rgba(17,88,4,1) 82%)",
+    "card_background_color": "#f0fce3",
+    "profile_picture_url": "https://imgur.com/M6HKdFI",
+    "profile_picture_border_color": "#7d6247",
+    "profile_picture_line_color": "#543313",
+    "display_name": "Marysa Garcia",
+    "display_name_color": "#543313",
+    "sub_heading_color": "#7d6247",
+    "sub_heading_lines_color": "rgb(200,204,207)",
+    "view_gallery_text_color": "#7d6247",
+    "view_gallery_border_color": "#40310d",
+    "view_gallery_text_color_hover": "#41cc66",
+    "view_gallery_border_color_hover": "#41cc66",
+    "icon_color": "#ab5a1b",
+    "icon_border_color": "#40310d",
+    "icon_color_hover": "#41cc66",
+    "icon_border_color_hover": "#41cc66",
+    "footer": " Marysa Garcia",
+    "footer_year": "2020",
+    "footer_color": "rgba(255,255,255,0.75)",
+    "footer_line_color": "rgba(255,255,255,0.75)"
+}
