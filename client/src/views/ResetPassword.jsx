@@ -41,11 +41,11 @@ export default function ResetPassword({ history }) {
             // setPassword({password: formData.password})
                 e.preventDefault()
                 axiosWithAuth()
-                    .delete('https://mg-photography-backend.herokuapp.com/api/user/Marysa')
+                    .delete('https://mg-photography-backend-demo.herokuapp.com/api/user/Marysa')
                     .then(res => console.log(res))
                     .catch(err => console.log(err))
                 axiosWithAuth()
-                    .post('https://mg-photography-backend.herokuapp.com/api/user/', password)
+                    .post('https://mg-photography-backend-demo.herokuapp.com/api/user/', password)
                     .then(res => setResetSuccess(true))
                     .catch(err => setResetFailure(true))
                 }

@@ -18,7 +18,7 @@ export default function SecurityQuestionAnswer({ history }) {
 
     useEffect(e => {
         axios
-            .get('https://mg-photography-backend.herokuapp.com/api/security/Marysa')
+            .get('https://mg-photography-backend-demo.herokuapp.com/api/security/Marysa')
             .then(res => console.log(res))
             .catch(err => console.log(err))
         // e.preventDefault()
@@ -48,11 +48,11 @@ export default function SecurityQuestionAnswer({ history }) {
         } else {
         e.preventDefault()
         axiosWithAuth()
-            .delete('https://mg-photography-backend.herokuapp.com/api/security/Marysa')
+            .delete('https://mg-photography-backend-demo.herokuapp.com/api/security/Marysa')
             .then(res => console.log(res))
             .catch(err => console.log(err))
         axios
-            .post('https://mg-photography-backend.herokuapp.com/api/security/', formData)
+            .post('https://mg-photography-backend-demo.herokuapp.com/api/security/', formData)
             .then(res => setSecuritySuccess(true))
             .catch(err => setSecurityFailure(true))
         }

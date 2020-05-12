@@ -40,7 +40,7 @@ export default function AdminPhotosAdd({ history }) {
         } else {
         e.preventDefault()
         axiosWithAuth()
-            .post('https://mg-photography-backend.herokuapp.com/api/pictures/', formData)
+            .post('https://mg-photography-backend-demo.herokuapp.com/api/pictures/', formData)
             .then(res => setUploadSuccess(true))
             .catch(err => setUploadFailure(true))
         }

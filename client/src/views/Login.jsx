@@ -19,7 +19,7 @@ export default function Login({ history }) {
     useEffect(() => {
     localStorage.removeItem('token')
     axios
-        .get('https://mg-photography-backend.herokuapp.com/api/security/Marysa')
+        .get('https://mg-photography-backend-demo.herokuapp.com/api/security/Marysa')
         .then(res => setSecurityQuestion(res.data.security_question))
         .catch(err => console.log(err))
     },[])
@@ -27,7 +27,7 @@ export default function Login({ history }) {
     const login = e => {
         e.preventDefault()
         axios
-            .post('https://mg-photography-backend.herokuapp.com/api/admin', creds)
+            .post('https://mg-photography-backend-demo.herokuapp.com/api/admin', creds)
             .then(res => {
                 localStorage.setItem('token', res.data.token)
                 history.push('/admin_access')

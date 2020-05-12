@@ -31,7 +31,7 @@ function App() {
  console.log('editOBJappJS', editPhoto)
   useEffect(() => {
     axios
-      .get('https://mg-photography-backend.herokuapp.com/api/pictures')
+      .get('https://mg-photography-backend-demo.herokuapp.com/api/pictures')
       .then(res => {
         setPhotos(res.data)
         setModelingPhotos(res.data.filter(photo => photo.category.toLowerCase() === 'modeling'))

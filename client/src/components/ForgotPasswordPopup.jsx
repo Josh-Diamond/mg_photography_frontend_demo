@@ -34,7 +34,7 @@ export default function ForgotPasswordPopup({ history, setForgot, securityQuesti
     const submitAnswer = e => {
         e.preventDefault()
         axios
-            .post('https://mg-photography-backend.herokuapp.com/api/security/reset_password', answer)
+            .post('https://mg-photography-backend-demo.herokuapp.com/api/security/reset_password', answer)
             .then(res => correct(res))
             .catch(err => catchHandler(err))
     }

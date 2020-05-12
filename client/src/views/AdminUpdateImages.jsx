@@ -41,7 +41,7 @@ export default function AdminUpdateImages({ history }) {
 
     useEffect(() => {
         axios
-            .get('https://mg-photography-backend.herokuapp.com/api/profile/1')
+            .get('https://mg-photography-backend-demo.herokuapp.com/api/profile/1')
             .then(res => dataFetch(res))
             .catch(err => console.log(err))
     },[])
@@ -57,7 +57,7 @@ export default function AdminUpdateImages({ history }) {
     const submitHandler = e => {
         e.preventDefault()
         axiosWithAuth()
-            .patch('https://mg-photography-backend.herokuapp.com/api/profile/1', formData)
+            .patch('https://mg-photography-backend-demo.herokuapp.com/api/profile/1', formData)
             .then(res => setSaveSuccess(true))
             .catch(err => setSecurityFailure(true))
         }

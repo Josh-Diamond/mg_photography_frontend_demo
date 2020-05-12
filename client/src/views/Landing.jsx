@@ -20,7 +20,7 @@ export default function Landing() {
 
     const getStyles = () => {
         axios
-            .get('https://mg-photography-backend.herokuapp.com/api/profile/1')
+            .get('https://mg-photography-backend-demo.herokuapp.com/api/profile/1')
             .then(res => {
                 setBeStyles(res.data)
                 setLoading(false)

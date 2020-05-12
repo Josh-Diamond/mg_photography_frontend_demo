@@ -36,7 +36,7 @@ export default function AdminPhotosAdd({ history, editID, editPhoto }) {
         } else {
         e.preventDefault()
         axiosWithAuth()
-            .patch(`https://mg-photography-backend.herokuapp.com/api/pictures/${editID}`, formData)
+            .patch(`https://mg-photography-backend-demo.herokuapp.com/api/pictures/${editID}`, formData)
             .then(res => setEditSuccess(true))
             .catch(err => setEditFailure(true))
         }

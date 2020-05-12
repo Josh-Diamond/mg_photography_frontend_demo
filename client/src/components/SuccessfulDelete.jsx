@@ -10,7 +10,7 @@ export default function SuccessfulDelete({ history, setSuccessfulDelete, setAllP
         setSuccessfulDelete(false)
         // window.location.reload()
         axios
-            .get('https://mg-photography-backend.herokuapp.com/api/pictures')
+            .get('https://mg-photography-backend-demo.herokuapp.com/api/pictures')
             .then(res => setAllPhotos(res.data))
             .catch(err => console.log(err))
     }
