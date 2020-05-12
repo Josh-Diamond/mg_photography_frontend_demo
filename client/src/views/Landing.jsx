@@ -171,7 +171,7 @@ export default function Landing() {
                                     maxWidth: '250px',
                                     display: 'block',
                                     // boxShadow: 'rgb(255, 255, 255) 0px 0px 0px 1.5rem',
-                                    boxShadow: `${styles.card_background_color} 0px 0px 0px 1.5rem`,
+                                    boxShadow: `${styles.profile_picture_border_color} 0px 0px 0px 1.5rem`,
                                     margin: '0px auto',
                                     borderRadius: '100%',
                                     '-webkit-touch-callout': 'none',
